@@ -1,10 +1,11 @@
-# 001 — Modelo Sheets (7 abas) — MVP Micro-CRM v2
+# 001 — Modelo Sheets (5 abas no M0) — MVP Micro-CRM v2
 
 **Objetivo:** Template replicável em 2h. 1 planilha por cliente, na conta Google do lojista.
 **Padrão BR:** `America/Sao_Paulo`, `DD/MM/YYYY HH:mm`, `R$`, `telefone_norm` = só dígitos.
 
 ## O que entregar
-- 7 CSVs em `specs/csvs/` com headers + 5 linhas fake (clínica)
+- 5 CSVs em `specs/csvs/` (M0) com headers + 5 linhas fake (clínica)
+- 2 CSVs em `specs/_backlog/` (`LOGS.csv`, `FATURAMENTO.csv`) — só em M4, sob demanda
 - Fórmulas prontas para colar (pipeline + atraso)
 - Validações de lista (documentadas, não no CSV)
 
@@ -38,13 +39,13 @@ Pipeline aberto:
 ```
 
 ## Abas
-- `CLIENTES.csv` — 10 colunas, telefone_norm = só dígitos, criado_em = `=AGORA()` na importação
-- `OPORTUNIDADES.csv` — 13 colunas, proximo_contato = `=HOJE()+2` (dias_followup)
+- `CLIENTES.csv` — 10 colunas, `telefone_norm` via `=REGEXREPLACE(C2;"\D";"")` no Sheets (sem módulo Make), criado_em = `=AGORA()`
+- `OPORTUNIDADES.csv` — 13 colunas, `proximo_contato` = `=HOJE()+2` (dias_followup)
 - `INTERACOES.csv` — 8 colunas
-- `AGENDAMENTOS.csv` — 7 colunas, calendar_event_id vazio até SC3
+- `AGENDAMENTOS.csv` — 7 colunas, `calendar_event_id` vazio até SC3
 - `CONFIG.csv` — chave|valor (12 linhas, ver V2 seção 5)
-- `LOGS.csv` — 5 colunas
-- `FATURAMENTO.csv` — 8 colunas
+- `LOGS.csv` — 5 colunas → `_backlog/` (só M4)
+- `FATURAMENTO.csv` — 8 colunas → `_backlog/` (só M4)
 
 ## Fake data (clínica)
 5 clientes: Maria Silva (31) 98765-4321, João Oliveira, Ana Costa, Pedro Santos, Carla Mendes. 5 oportunidades: limpeza, clareamento, implante, ortodontia, avaliação. Valores R$ 150-3200. Estágios variados para testar digest.
