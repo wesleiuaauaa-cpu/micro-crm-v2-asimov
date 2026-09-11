@@ -1,0 +1,13 @@
+chave,valor
+plano,Mensageiro
+nome_negocio,Clínica Sorriso Mariana
+horario_atendimento,seg–sex 8h–18h | sáb 8h–12h
+fuso,America/Sao_Paulo
+telegram_chat_id_lojista,123456789
+telegram_chat_id_prestador,987654321
+auto_resposta_ativa,SIM
+texto_auto_resposta,"Olá! Recebemos sua mensagem e já registramos seu pedido. A Clínica Sorriso Mariana responde por aqui em até algumas horas (seg–sex 8h–18h). ✅"
+janela_auto_resposta_h,24
+dias_followup,2
+dia_relatorio,domingo
+hora_digest,08:00

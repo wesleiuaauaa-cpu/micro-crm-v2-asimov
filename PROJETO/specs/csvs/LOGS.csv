@@ -1,0 +1,4 @@
+ts,cenario,severidade,resumo,payload_trunc
+11/09/2026 08:00,SC2,info,Digest enviado: 2 em atraso,{"atrasadas":2}
+11/09/2026 08:01,SC1,erro,Calendar falhou pendente_sync,{"id":"AGD-20260909100003"}
+11/09/2026 09:00,SC1,info,Auto-resposta enviada CLI-20260911080001,WA-001

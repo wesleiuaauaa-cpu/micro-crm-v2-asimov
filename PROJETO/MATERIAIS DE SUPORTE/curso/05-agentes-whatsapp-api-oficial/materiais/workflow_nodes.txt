@@ -1,0 +1,66 @@
+Webhook | n8n-nodes-base.webhook
+If2 | n8n-nodes-base.if
+No Operation, do nothing3 | n8n-nodes-base.noOp
+Edit Fields2 | n8n-nodes-base.set
+Get many rows | n8n-nodes-base.supabase
+If3 | n8n-nodes-base.if
+Create a row | n8n-nodes-base.supabase
+Switch1 | n8n-nodes-base.switch
+No Operation, do nothing4 | n8n-nodes-base.noOp
+HTTP Request4 | n8n-nodes-base.httpRequest
+HTTP Request5 | n8n-nodes-base.httpRequest
+HTTP Request6 | n8n-nodes-base.httpRequest
+Analyze image1 | @n8n/n8n-nodes-langchain.openAi
+HTTP Request7 | n8n-nodes-base.httpRequest
+Transcribe a recording1 | @n8n/n8n-nodes-langchain.openAi
+Edit Fields3 | n8n-nodes-base.set
+Redis3 | n8n-nodes-base.redis
+Wait1 | n8n-nodes-base.wait
+Redis4 | n8n-nodes-base.redis
+If4 | n8n-nodes-base.if
+No Operation, do nothing5 | n8n-nodes-base.noOp
+Edit Fields4 | n8n-nodes-base.set
+Redis5 | n8n-nodes-base.redis
+AI Agent | @n8n/n8n-nodes-langchain.agent
+OpenAI Chat Model | @n8n/n8n-nodes-langchain.lmChatOpenAi
+AI Agent1 | @n8n/n8n-nodes-langchain.agent
+OpenAI Chat Model1 | @n8n/n8n-nodes-langchain.lmChatOpenAi
+Edit Fields5 | n8n-nodes-base.set
+Split Out | n8n-nodes-base.splitOut
+Loop Over Items | n8n-nodes-base.splitInBatches
+Replace Me | n8n-nodes-base.noOp
+Wait2 | n8n-nodes-base.wait
+Send message1 | n8n-nodes-base.whatsApp
+Postgres Chat Memory | @n8n/n8n-nodes-langchain.memoryPostgresChat
+AI Agent Tool | @n8n/n8n-nodes-langchain.agentTool
+OpenAI Chat Model2 | @n8n/n8n-nodes-langchain.lmChatOpenAi
+Supabase Vector Store | @n8n/n8n-nodes-langchain.vectorStoreSupabase
+Embeddings OpenAI | @n8n/n8n-nodes-langchain.embeddingsOpenAi
+Call n8n Workflow Tool | @n8n/n8n-nodes-langchain.toolWorkflow
+When Executed by Another Workflow | n8n-nodes-base.executeWorkflowTrigger
+Edit Fields | n8n-nodes-base.set
+Update a row | n8n-nodes-base.supabase
+Get many rows1 | n8n-nodes-base.supabase
+Edit Fields1 | n8n-nodes-base.set
+Aggregate | n8n-nodes-base.aggregate
+AI Agent2 | @n8n/n8n-nodes-langchain.agent
+OpenAI Chat Model3 | @n8n/n8n-nodes-langchain.lmChatOpenAi
+Send a message | n8n-nodes-base.gmail
+When clicking ‘Execute workflow’ | n8n-nodes-base.manualTrigger
+Edit Fields6 | n8n-nodes-base.set
+Code | n8n-nodes-base.code
+Loop Over Items1 | n8n-nodes-base.splitInBatches
+Replace Me1 | n8n-nodes-base.noOp
+Supabase Vector Store1 | @n8n/n8n-nodes-langchain.vectorStoreSupabase
+Embeddings OpenAI1 | @n8n/n8n-nodes-langchain.embeddingsOpenAi
+Default Data Loader | @n8n/n8n-nodes-langchain.documentDefaultDataLoader
+Recursive Character Text Splitter | @n8n/n8n-nodes-langchain.textSplitterRecursiveCharacterTextSplitter
+Edit Fields8 | n8n-nodes-base.set
+If | n8n-nodes-base.if
+No Operation, do nothing | n8n-nodes-base.noOp
+Download file | n8n-nodes-base.googleDrive
+Extract from File | n8n-nodes-base.extractFromFile
+Supabase Vector Store2 | @n8n/n8n-nodes-langchain.vectorStoreSupabase
+Embeddings OpenAI2 | @n8n/n8n-nodes-langchain.embeddingsOpenAi
+Default Data Loader1 | @n8n/n8n-nodes-langchain.documentDefaultDataLoader
+Edit Fields7 | n8n-nodes-base.set

@@ -1,0 +1,6 @@
+id,cliente_id,titulo,data_hora,status,calendar_event_id,criado_em
+AGD-20260911080001,CLI-20260911080001,Limpeza Maria Silva,13/09/2026 09:00,agendado,,11/09/2026 08:00
+AGD-20260910090002,CLI-20260910090002,Ortodontia João Oliveira,14/09/2026 14:00,confirmado,cal_abc123,10/09/2026 09:00
+AGD-20260909100003,CLI-20260909100003,Implante Ana Costa,12/09/2026 10:00,pendente_sync,,09/09/2026 10:00
+AGD-20260908110004,CLI-20260908110004,Retorno Pedro Santos,15/09/2026 11:00,agendado,,08/09/2026 11:00
+AGD-20260907120005,CLI-20260907120005,Avaliação Carla Mendes,16/09/2026 15:00,cancelado,cal_xyz789,07/09/2026 12:00

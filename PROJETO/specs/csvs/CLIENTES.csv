@@ -1,0 +1,6 @@
+id,nome,telefone,telefone_norm,origem,status_relacionamento,observacoes,criado_em,ultima_interacao,ultima_auto_resposta
+CLI-20260911080001,Maria Silva,31987654321,5531987654321,whatsapp,lead,Interesse em limpeza,11/09/2026 08:00,11/09/2026 08:00,11/09/2026 08:00
+CLI-20260910090002,João Oliveira,31988765432,5531988765432,indicacao,ativo,Retorno ortodontia,10/09/2026 09:00,11/09/2026 09:00,
+CLI-20260909100003,Ana Costa,31976543210,5531976543210,presencial,lead,Orçamento implante,09/09/2026 10:00,09/09/2026 10:00,09/09/2026 10:00
+CLI-20260908110004,Pedro Santos,31991234567,5531991234567,whatsapp,inativo,Sem retorno 7d,08/09/2026 11:00,08/09/2026 11:00,
+CLI-20260907120005,Carla Mendes,31999887766,5531999887766,outro,lead,Clareamento,07/09/2026 12:00,07/09/2026 12:00,07/09/2026 12:00

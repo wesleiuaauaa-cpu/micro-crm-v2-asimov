@@ -1,0 +1,199 @@
+Criando agentes de atendimento
+profissionais no Whatsapp
+Asimov Academy
+
+Criando agentes de atendimento profissionais no Whatsapp
+Conteúdo
+1. Introdução e Arquitetura de Agentes de IA
+9
+O que vamos construir?
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+A Stack Tecnológica . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+Hospedagem: Railway . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+9
+Orquestração: n8n . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+Integração: API Oficial da Meta . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+Bancos de Dados e Memória . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+O Fluxo da Informação . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+02. Configurando sua Infraestrutura na Railway
+12
+Escolhendo o Plano Ideal . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+12
+O Poder dos Templates . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+Passo a Passo da Instalação: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+Configuração Inicial do n8n
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+14
+03. Preparação e Pré‑requisitos da API Oficial (Meta)
+15
+Por que a Meta exige tantos pré‑requisitos? . . . . . . . . . . . . . . . . . . . . . . . . . . .
+15
+Etapa inicial: criando a conta base . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+15
+Criando um Gmail para a operação . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+16
+Criando a conta no Facebook
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+16
+O aquecimento da conta . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+16
+O que é aquecer a conta? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+16
+Quanto tempo aquecer? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+17
+Criando e aquecendo a página do Facebook
+. . . . . . . . . . . . . . . . . . . . . . . . . .
+17
+Preenchendo a página corretamente . . . . . . . . . . . . . . . . . . . . . . . . . . .
+17
+Verificação com número de WhatsApp
+. . . . . . . . . . . . . . . . . . . . . . . . . .
+17
+E se eu quiser fazer tudo mais rápido? . . . . . . . . . . . . . . . . . . . . . . . . . . .
+17
+Criando o Business Manager . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+18
+O que é o Business Manager?
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+18
+Criando o portfólio empresarial . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+18
+Possíveis bloqueios no início . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+18
+Criando a conta de anúncios . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+18
+Ajustando o site da empresa . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+19
+O que o site precisa ter?
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+19
+Enviando o site para verificação . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+19
+Asimov Academy
+1
+
+Criando agentes de atendimento profissionais no Whatsapp
+Separando os dados para a verificação da empresa
+. . . . . . . . . . . . . . . . . . . . . .
+19
+Quais dados devem ser separados? . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+19
+Enviando essas informações . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+20
+A verificação é obrigatória . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+20
+Resumo do processo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+20
+04. Criando o Aplicativo na Meta e Configurando o Número
+21
+Acessando a área de desenvolvedores da Meta . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+Criando o novo aplicativo
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+Autenticação e segurança da conta . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+Iniciando a configuração da API do WhatsApp
+. . . . . . . . . . . . . . . . . . . . . . . . .
+22
+Escolhendo o número que será usado . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+22
+Cadastro do Perfil e Verificação
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+23
+Configurando a forma de pagamento . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+23
+Registrando o número de telefone . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+24
+O que será necessário
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+24
+Gerando o token de acesso . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+24
+Passo para gerar o token . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+25
+Usando o Postman para registrar o telefone . . . . . . . . . . . . . . . . . . . . . . . . . . .
+25
+Parâmetros necessários
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+25
+Tipo de autenticação . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+26
+Definindo o PIN de registro . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+26
+Enviando a requisição . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+26
+Verificando o status do número . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+26
+Testando o envio de mensagem . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+27
+05. Conectando o n8n à Meta via Webhooks
+28
+O que é um Webhook? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+28
+Configuração Inicial no n8n
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+28
+Ativação no Painel da Meta . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+29
+O Desafio da Verificação (Hub Challenge) . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+30
+Passo a Passo do Código de Resposta: . . . . . . . . . . . . . . . . . . . . . . . . . . .
+30
+06. Ativando o webhook em produção e configurando o envio de mensagens no n8n
+31
+O que muda depois da validação do webhook? . . . . . . . . . . . . . . . . . . . . . . . . .
+31
+Ativando o campo de mensagens na Meta . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+31
+Ajustando o webhook no n8n para produção . . . . . . . . . . . . . . . . . . . . . . . . . .
+32
+Removendo o node de resposta manual
+. . . . . . . . . . . . . . . . . . . . . . . . .
+32
+Alterando os parâmetros do webhook . . . . . . . . . . . . . . . . . . . . . . . . . . .
+32
+Asimov Academy
+2
+
+Criando agentes de atendimento profissionais no Whatsapp
+Testando o recebimento de mensagens . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+33
+Colocando o aplicativo em produção . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+34
+Onde fazer isso . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+34
+Informações obrigatórias para publicação
+. . . . . . . . . . . . . . . . . . . . . . . . . . .
+34
+O que é o ideal aqui? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+35
+Cuidado com links com rastreamento . . . . . . . . . . . . . . . . . . . . . . . . . . .
+35
+Recomendação importante
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+35
+Publicando o aplicativo
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+35
+Adicionando um node para envio de mensagens . . . . . . . . . . . . . . . . . . . . . . . .
+36
+Criando a credencial da Meta no n8n
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+36
+Business Account ID
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+36
+Access Token temporário . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+37
+Configurando o node de envio . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+37
+Testa

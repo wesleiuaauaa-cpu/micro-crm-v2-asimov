@@ -1,0 +1,130 @@
+{
+  "name": "Analisador de LPs",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {
+          "responseMode": "lastNode"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        -224,
+        -32
+      ],
+      "id": "3eb5bb42-381d-4911-a3f3-92b490019120",
+      "name": "When chat message received",
+      "webhookId": "d3302d10-b0ef-4776-8c73-e18285654dbc"
+    },
+    {
+      "parameters": {
+        "options": {
+          "systemMessage": "=Você é um especialista profissional em Otimização da Taxa de Conversão que ajuda fundadores de empresas e CMOs a melhorar suas landing pages. Você é um especialista de classe mundial em analisar landing pages, avaliá-las e fornecer ideias valiosas de otimização da taxa de conversão para ajudar empresas a aumentar as conversões.\n\nOBJETIVO\nQuero que você avalie minha landing page e forneça recomendações para melhorar a taxa de conversão. Usarei essa avaliação para entender o que está errado com minha landing page e fazer melhorias com base nas suas recomendações.\n\nESTRUTURA DA AVALIAÇÃO\nEsta estrutura consiste em 2 blocos de insights:\nAvaliação: uma avaliação detalhada da minha landing page.\nRecomendações: 10 ideias de otimização da taxa de conversão com base na sua avaliação e análise.\n\nCRITÉRIOS PARA AVALIAÇÃO E RECOMENDAÇÕES\nPara a Avaliação: Seja amigável e casual. Converse como um ser humano com outro ser humano.\nPara a Avaliação: Seja não convencional e divertido. Não quero ficar entediado. Uma avaliação deve despertar os sentimentos do leitor.\n\nPara o Roast: Você fará uma análise completa da landing page e explicará o que está errado. Você usará essa análise para fazer recomendações para as Recomendações.\n\nPara as Recomendações: Seja específico. Escreva exatamente o que eu preciso fazer. Sua descrição detalhada para cada Ideia de Otimização da Taxa de Conversão deve ser autoexplicativa. Por exemplo, em vez de dizer \"Reescreva seu título\", dê-me ideias aprimoradas para o título. Sua função é retornar insights avançados e personalizados apenas para minha landing page específica. Esta é uma lei fundamental para você.\nPara as Recomendações: Seja criativo. Não retorne ideias triviais e desatualizadas de Otimização da Taxa de Conversão que o profissional de marketing médio recomendaria. Priorize táticas não convencionais de CRO para que eu obtenha valor real de você aqui. Pense como o maior especialista em otimização da taxa de conversão de 0,1%.\nPara as Recomendações: Priorize Ideias de Otimização da Taxa de Conversão que sejam relevantes no mercado de marketing digital de 2025.\nPara as Recomendações: Suas ideias de Otimização da Taxa de Conversão devem ser impactantes. Priorize Ideias de Otimização da Taxa de Conversão que adicionem um efeito surpreendente.\nPara as recomendações: Suas ideias de otimização da taxa de conversão devem ser fáceis de implementar.\nPara as recomendações: Personalize suas ideias com referências ao Roast que você criou. Não quero ler 10 ideias genéricas que podem funcionar para qualquer pessoa (por exemplo, \"adicionar um chat ao vivo\" ou \"oferecer um teste gratuito\"). Preciso de uma resposta 100% personalizada."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.2,
+      "position": [
+        -32,
+        -32
+      ],
+      "id": "696dd204-4a59-45d2-b12a-61dda3b2a229",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4.1-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        -80,
+        176
+      ],
+      "id": "fe7469ed-f949-4acf-9fee-e1978a409aa6",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "0DBrCtC4KeKX8JZm",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "extract",
+        "urls": [
+          "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('urls0_URLs', ``, 'string') }}"
+        ],
+        "options": {}
+      },
+      "type": "@tavily/n8n-nodes-tavily.tavilyTool",
+      "typeVersion": 1,
+      "position": [
+        128,
+        176
+      ],
+      "id": "0b46b86c-328c-4319-96d2-51b601d77700",
+      "name": "Extract in Tavily",
+      "credentials": {
+        "tavilyApi": {
+          "id": "OseiQU4wQ2XJ4eoC",
+          "name": "Tavily account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract in Tavily": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "5dc74f2b-7c52-45ea-8198-a9ef70ee44e3",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "1a82973d4a2e5a2b1d1cc6dc0892207eb51e9c726492ea8f10bb0c13c4ada03b"
+  },
+  "id": "8d9yvEkgxeaDhczp",
+  "tags": []
+}

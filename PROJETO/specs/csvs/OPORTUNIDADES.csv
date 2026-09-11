@@ -1,0 +1,6 @@
+id,cliente_id,descricao,valor,estagio,origem,proximo_contato,responsavel,perdida_motivo,criado_em,fechado_em,aux_atraso
+OPP-20260911080001,CLI-20260911080001,Limpeza + avaliação,150.00,novo,whatsapp,13/09/2026,Dra. Ana,,11/09/2026 08:00,,
+OPP-20260910090002,CLI-20260910090002,Ortodontia metálica,3200.00,em_analise,indicacao,11/09/2026,Dra. Ana,,10/09/2026 09:00,,
+OPP-20260909100003,CLI-20260909100003,Implante superior,2800.00,proposta_enviada,presencial,12/09/2026,Dra. Ana,,09/09/2026 10:00,,
+OPP-20260908110004,CLI-20260908110004,Clareamento,800.00,aguardando,whatsapp,09/09/2026,Dra. Ana,,08/09/2026 11:00,,
+OPP-20260907120005,CLI-20260907120005,Avaliação inicial,0.00,perdido,outro,,Dra. Ana,preco,07/09/2026 12:00,09/09/2026 15:00,
